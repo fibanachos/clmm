@@ -36,7 +36,8 @@ import {
 import { address, type Address, type Instruction } from "@solana/kit";
 import type { WhirlpoolDeployment } from "../../src/config";
 import { SPLASH_POOL_TICK_SPACING } from "../../src/config";
-import { LOCALNET_ADMIN_KEYPAIR_0 } from "./admin";
+import { UPGRADE_AUTHORITY_SIGNER } from "./admin";
+import { METADATA_UPDATE_AUTHORITY, TREASURY } from "./constants";
 import { getNextKeypair } from "./keypair";
 import {
   rpc,
@@ -48,7 +49,7 @@ import {
 export async function setupConfigAndFeeTiers(
   programId: Address = TEST_WHIRLPOOL_DEPLOYMENT.programId,
 ): Promise<Address> {
-  const admin = LOCALNET_ADMIN_KEYPAIR_0;
+  const admin = UPGRADE_AUTHORITY_SIGNER;
   const keypair = getNextKeypair();
   const instructions: Instruction[] = [];
 
@@ -58,7 +59,7 @@ export async function setupConfigAndFeeTiers(
         config: keypair,
         funder: admin,
         feeAuthority: signer.address,
-        collectProtocolFeesAuthority: signer.address,
+        collectProtocolFeesAuthority: TREASURY,
         rewardEmissionsSuperAuthority: signer.address,
         defaultProtocolFeeRate: 100,
       },
@@ -359,9 +360,7 @@ export async function setupTEPosition(
   } = {},
 ): Promise<Address> {
   const deployment = config.whirlpoolDeployment ?? TEST_WHIRLPOOL_DEPLOYMENT;
-  const metadataUpdateAuth = address(
-    "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr",
-  );
+  const metadataUpdateAuth = METADATA_UPDATE_AUTHORITY;
   const positionMint = getNextKeypair();
   const whirlpoolAccount = await fetchWhirlpool(rpc, whirlpool);
   const tickLower = config.tickLower ?? -100;

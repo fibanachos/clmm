@@ -60,7 +60,7 @@ export type InitializePositionBundleWithMetadataInstruction<
   TAccountFunder extends string | AccountMeta<string> = string,
   TAccountMetadataUpdateAuth extends
     | string
-    | AccountMeta<string> = "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr",
+    | AccountMeta<string> = "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2",
   TAccountTokenProgram extends
     | string
     | AccountMeta<string> = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
@@ -315,7 +315,7 @@ export async function getInitializePositionBundleWithMetadataInstructionAsync<
   }
   if (!accounts.metadataUpdateAuth.value) {
     accounts.metadataUpdateAuth.value =
-      "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr" as Address<"3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr">;
+      "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2" as Address<"Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2">;
   }
   if (!accounts.tokenProgram.value) {
     accounts.tokenProgram.value =
@@ -496,7 +496,7 @@ export function getInitializePositionBundleWithMetadataInstruction<
   // Resolve default values.
   if (!accounts.metadataUpdateAuth.value) {
     accounts.metadataUpdateAuth.value =
-      "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr" as Address<"3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr">;
+      "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2" as Address<"Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2">;
   }
   if (!accounts.tokenProgram.value) {
     accounts.tokenProgram.value =

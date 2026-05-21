@@ -6,7 +6,7 @@ import { PublicKey } from "@solana/web3.js";
  * @category Constants
  */
 export const ORCA_WHIRLPOOL_PROGRAM_ID = new PublicKey(
-  "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+  "CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs",
 );
 
 /**
@@ -138,7 +138,7 @@ export const FEE_RATE_MUL_VALUE = new BN(1_000_000);
  * @category Constants
  */
 export const WHIRLPOOL_NFT_UPDATE_AUTH = new PublicKey(
-  "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr",
+  "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2",
 );
 
 /**

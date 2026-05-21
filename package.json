@@ -11,16 +11,20 @@
     "format": "nx run-many --target format --projects",
     "lint": "nx run-many --target lint --projects",
     "clean": "nx reset && nx run-many --target clean --projects",
-    "generate": "nx run-many --target generate --projects && nx run-many --target format --projects @orca-so/whirlpools-lint,@orca-so/whirlpools-rust-client"
+    "generate": "nx run-many --target generate --projects && nx run-many --target format --projects @orca-so/whirlpools-lint,@orca-so/whirlpools-rust-client",
+    "init:protocol": "yarn exec tsx scripts/init-cookieora-protocol.ts"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.7",
+    "@coral-xyz/anchor": "~0.32.1",
+    "@solana/web3.js": "^1.98.4",
     "@types/node": "^24.9.1",
     "nx": "^22.0.4",
     "rimraf": "^6.0.1",
     "tsup": "^8.4.0",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "tsx": "^4.19.4"
   },
   "workspaces": [
     "programs/*",

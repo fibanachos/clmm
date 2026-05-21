@@ -1,30 +1,34 @@
 import { Keypair, LAMPORTS_PER_SOL } from "@solana/web3.js";
+import { readFileSync } from "fs";
+import { resolve } from "path";
 import type { WhirlpoolContext } from "../../src";
-import localnetAdminKeypair0 from "../../../../programs/whirlpool/src/auth/localnet/localnet-admin-keypair-0.json";
-import localnetAdminKeypair1 from "../../../../programs/whirlpool/src/auth/localnet/localnet-admin-keypair-1.json";
 
-const LOCALNET_ADMIN_KEYPAIR_0 = Keypair.fromSecretKey(
-  Buffer.from(localnetAdminKeypair0 as number[]),
+const UPGRADE_AUTHORITY_KEYPAIR_PATH = resolve(
+  __dirname,
+  "../../../../keys/local/upgrade-authority-live.json",
 );
 
-const LOCALNET_ADMIN_KEYPAIR_1 = Keypair.fromSecretKey(
-  Buffer.from(localnetAdminKeypair1 as number[]),
-);
+function loadUpgradeAuthorityKeypair(): Keypair {
+  const secretKey = JSON.parse(
+    readFileSync(UPGRADE_AUTHORITY_KEYPAIR_PATH, "utf8"),
+  ) as number[];
+  return Keypair.fromSecretKey(Buffer.from(secretKey));
+}
+
+const UPGRADE_AUTHORITY_KEYPAIR = loadUpgradeAuthorityKeypair();
 
 export async function getLocalnetAdminKeypair0(
   ctx: WhirlpoolContext,
 ): Promise<Keypair> {
-  const keypair = LOCALNET_ADMIN_KEYPAIR_0;
-  await fundKeypairIfNeeded(ctx, keypair);
-  return keypair;
+  await fundKeypairIfNeeded(ctx, UPGRADE_AUTHORITY_KEYPAIR);
+  return UPGRADE_AUTHORITY_KEYPAIR;
 }
 
 export async function getLocalnetAdminKeypair1(
   ctx: WhirlpoolContext,
 ): Promise<Keypair> {
-  const keypair = LOCALNET_ADMIN_KEYPAIR_1;
-  await fundKeypairIfNeeded(ctx, keypair);
-  return keypair;
+  await fundKeypairIfNeeded(ctx, UPGRADE_AUTHORITY_KEYPAIR);
+  return UPGRADE_AUTHORITY_KEYPAIR;
 }
 
 async function fundKeypairIfNeeded(

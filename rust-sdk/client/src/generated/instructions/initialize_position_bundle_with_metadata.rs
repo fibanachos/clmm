@@ -156,7 +156,7 @@ impl Default for InitializePositionBundleWithMetadataInstructionData {
                 ///   3. `[writable]` position_bundle_token_account
           ///   4. `[]` position_bundle_owner
                       ///   5. `[writable, signer]` funder
-                ///   6. `[optional]` metadata_update_auth (default to `3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr`)
+                ///   6. `[optional]` metadata_update_auth (default to `Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2`)
                 ///   7. `[optional]` token_program (default to `TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA`)
                 ///   8. `[optional]` system_program (default to `11111111111111111111111111111111`)
                 ///   9. `[optional]` rent (default to `SysvarRent111111111111111111111111111111111`)
@@ -214,7 +214,7 @@ impl InitializePositionBundleWithMetadataBuilder {
                         self.funder = Some(funder);
                     self
     }
-            /// `[optional account, default to '3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr']`
+            /// `[optional account, default to 'Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2']`
 #[inline(always)]
     pub fn metadata_update_auth(&mut self, metadata_update_auth: solana_pubkey::Pubkey) -> &mut Self {
                         self.metadata_update_auth = Some(metadata_update_auth);
@@ -271,7 +271,7 @@ impl InitializePositionBundleWithMetadataBuilder {
                                         position_bundle_token_account: self.position_bundle_token_account.expect("position_bundle_token_account is not set"),
                                         position_bundle_owner: self.position_bundle_owner.expect("position_bundle_owner is not set"),
                                         funder: self.funder.expect("funder is not set"),
-                                        metadata_update_auth: self.metadata_update_auth.unwrap_or(solana_pubkey::pubkey!("3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr")),
+                                        metadata_update_auth: self.metadata_update_auth.unwrap_or(solana_pubkey::pubkey!("Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2")),
                                         token_program: self.token_program.unwrap_or(solana_pubkey::pubkey!("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA")),
                                         system_program: self.system_program.unwrap_or(solana_pubkey::pubkey!("11111111111111111111111111111111")),
                                         rent: self.rent.unwrap_or(solana_pubkey::pubkey!("SysvarRent111111111111111111111111111111111")),

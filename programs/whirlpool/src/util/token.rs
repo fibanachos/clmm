@@ -154,7 +154,7 @@ pub fn mint_position_token_with_metadata_and_remove_authority<'info>(
         DataV2 {
             name: WP_METADATA_NAME.to_string(),
             symbol: WP_METADATA_SYMBOL.to_string(),
-            uri: format!("{}/{}", WP_METADATA_URI, position.key()),
+            uri: WP_METADATA_URI.to_string(),
             creators: None,
             seller_fee_basis_points: 0,
             collection: None,
@@ -263,7 +263,7 @@ pub fn mint_position_bundle_token_with_metadata_and_remove_authority<'info>(
     )?;
 
     // Create Metadata
-    // Orca Position Bundle xxxx...yyyy
+    // Cookieora Position Bundle xxxx...yyyy
     // xxxx and yyyy are the first and last 4 chars of mint address
     let mint_address = position_bundle_mint.key().to_string();
     let mut nft_name = String::from(WPB_METADATA_NAME_PREFIX);

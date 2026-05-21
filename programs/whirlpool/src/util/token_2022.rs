@@ -13,7 +13,7 @@ use solana_program::program::{invoke, invoke_signed};
 use solana_program::system_instruction::transfer;
 
 use crate::constants::{
-    WP_2022_METADATA_NAME_PREFIX, WP_2022_METADATA_SYMBOL, WP_2022_METADATA_URI_BASE,
+    WP_2022_METADATA_NAME_PREFIX, WP_2022_METADATA_SYMBOL, WP_2022_METADATA_URI,
 };
 use crate::state::*;
 use crate::util::safe_create_account;
@@ -330,7 +330,7 @@ pub fn burn_and_close_user_position_token_2022<'info>(
 
 pub fn build_position_token_metadata<'info>(
     position_mint: &Signer<'info>,
-    position: &Account<'info, Position>,
+    _position: &Account<'info, Position>,
 ) -> (String, String, String) {
     // WP_2022_METADATA_NAME_PREFIX + " xxxx...yyyy"
     // xxxx and yyyy are the first and last 4 chars of mint address
@@ -342,9 +342,11 @@ pub fn build_position_token_metadata<'info>(
         &mint_address[mint_address.len() - 4..],
     );
 
-    let uri = format!("{}/{}", WP_2022_METADATA_URI_BASE, position.key());
-
-    (name, WP_2022_METADATA_SYMBOL.to_string(), uri)
+    (
+        name,
+        WP_2022_METADATA_SYMBOL.to_string(),
+        WP_2022_METADATA_URI.to_string(),
+    )
 }
 
 pub fn freeze_user_position_token_2022<'info>(

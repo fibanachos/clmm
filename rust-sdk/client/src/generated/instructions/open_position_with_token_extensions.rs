@@ -158,7 +158,7 @@ impl OpenPositionWithTokenExtensionsInstructionArgs {
                 ///   6. `[optional]` token2022_program (default to `TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb`)
                 ///   7. `[optional]` system_program (default to `11111111111111111111111111111111`)
                 ///   8. `[optional]` associated_token_program (default to `ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL`)
-                ///   9. `[optional]` metadata_update_auth (default to `3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr`)
+                ///   9. `[optional]` metadata_update_auth (default to `Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2`)
 #[derive(Clone, Debug, Default)]
 pub struct OpenPositionWithTokenExtensionsBuilder {
             funder: Option<solana_pubkey::Pubkey>,
@@ -229,7 +229,7 @@ impl OpenPositionWithTokenExtensionsBuilder {
                         self.associated_token_program = Some(associated_token_program);
                     self
     }
-            /// `[optional account, default to '3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr']`
+            /// `[optional account, default to 'Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2']`
 #[inline(always)]
     pub fn metadata_update_auth(&mut self, metadata_update_auth: solana_pubkey::Pubkey) -> &mut Self {
                         self.metadata_update_auth = Some(metadata_update_auth);
@@ -274,7 +274,7 @@ impl OpenPositionWithTokenExtensionsBuilder {
                                         token2022_program: self.token2022_program.unwrap_or(solana_pubkey::pubkey!("TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb")),
                                         system_program: self.system_program.unwrap_or(solana_pubkey::pubkey!("11111111111111111111111111111111")),
                                         associated_token_program: self.associated_token_program.unwrap_or(solana_pubkey::pubkey!("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL")),
-                                        metadata_update_auth: self.metadata_update_auth.unwrap_or(solana_pubkey::pubkey!("3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr")),
+                                        metadata_update_auth: self.metadata_update_auth.unwrap_or(solana_pubkey::pubkey!("Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2")),
                       };
           let args = OpenPositionWithTokenExtensionsInstructionArgs {
                                                               tick_lower_index: self.tick_lower_index.clone().expect("tick_lower_index is not set"),

@@ -458,7 +458,7 @@ async function internalOpenPositionInstructions(
         tickUpperIndex: initializableUpperTickIndex,
         token2022Program: TOKEN_2022_PROGRAM_ADDRESS,
         metadataUpdateAuth: address(
-          "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr",
+          "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2",
         ),
         withTokenMetadataExtension,
       },

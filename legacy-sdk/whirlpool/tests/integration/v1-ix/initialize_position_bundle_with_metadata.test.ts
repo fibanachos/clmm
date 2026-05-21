@@ -138,10 +138,10 @@ describe("initialize_position_bundle_with_metadata", () => {
     metadataPda: PDA,
     positionMint: PublicKey,
   ) {
-    const WPB_METADATA_NAME_PREFIX = "Orca Position Bundle";
-    const WPB_METADATA_SYMBOL = "OPB";
+    const WPB_METADATA_NAME_PREFIX = "Cookieora Position Bundle";
+    const WPB_METADATA_SYMBOL = "CPB";
     const WPB_METADATA_URI =
-      "https://arweave.net/A_Wo8dx2_3lSUwMIi7bdT_sqxi8soghRNAWXXiqXpgE";
+      "https://www.cookieora.com/assets/json/clmm_position_nft.json";
 
     const mintAddress = positionMint.toBase58();
     const nftName =

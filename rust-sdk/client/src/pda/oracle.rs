@@ -4,7 +4,7 @@ use solana_pubkey::Pubkey;
 
 /// Derives the oracle PDA for the given whirlpool under the supplied target program.
 ///
-/// Uses the mutable Whirlpool program ("whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc") when `None`.
+/// Uses the mutable Whirlpool program ("CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs") when `None`.
 pub fn get_oracle_address(
     whirlpool: &Pubkey,
     program_id: Option<Pubkey>,

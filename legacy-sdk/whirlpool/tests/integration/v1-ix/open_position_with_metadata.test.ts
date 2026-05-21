@@ -171,13 +171,13 @@ describe("open_position_with_metadata", () => {
 
     assert.ok(
       metadata.updateAuthority.toBase58() ===
-        "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr",
+        "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2",
     );
     assert.ok(metadata.mint.toBase58() === positionMint.toString());
 
     assert.ok(
       metadata.uri.replace(/\0/g, "") ===
-        `https://metadata.orca.so/positions/${position.toBase58()}`,
+        "https://www.cookieora.com/assets/json/clmm_position_nft.json",
     );
   }
 
@@ -466,7 +466,7 @@ describe("open_position_with_metadata", () => {
             positionMetadataAccount: metadataPda.publicKey,
             metadataProgram: METADATA_PROGRAM_ADDRESS,
             metadataUpdateAuth: new PublicKey(
-              "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr",
+              "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2",
             ),
             ...overrides,
           },

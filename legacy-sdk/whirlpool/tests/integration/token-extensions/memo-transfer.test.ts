@@ -65,11 +65,11 @@ describe("TokenExtension/MemoTransfer", () => {
     client = buildWhirlpoolClient(ctx);
   });
 
-  const MEMO_TRANSFER_COLLECT_FEES = "Orca CollectFees";
-  const MEMO_TRANSFER_COLLECT_PROTOCOL_FEES = "Orca CollectProtocolFees";
-  const MEMO_TRANSFER_COLLECT_REWARD = "Orca CollectReward";
-  const MEMO_TRANSFER_DECREASE_LIQUIDITY = "Orca Withdraw";
-  const MEMO_TRANSFER_SWAP = "Orca Trade";
+  const MEMO_TRANSFER_COLLECT_FEES = "Cookieora CollectFees";
+  const MEMO_TRANSFER_COLLECT_PROTOCOL_FEES = "Cookieora CollectProtocolFees";
+  const MEMO_TRANSFER_COLLECT_REWARD = "Cookieora CollectReward";
+  const MEMO_TRANSFER_DECREASE_LIQUIDITY = "Cookieora Withdraw";
+  const MEMO_TRANSFER_SWAP = "Cookieora Trade";
 
   describe("collect_fees_v2, collect_protocol_fees_v2", () => {
     let fixture: WhirlpoolTestFixtureV2;

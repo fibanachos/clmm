@@ -457,7 +457,7 @@ async fn internal_open_position(
         token2022_program: spl_token_2022_interface::ID,
         system_program: solana_system_interface::program::id(),
         associated_token_program: spl_associated_token_account_interface::program::id(),
-        metadata_update_auth: Pubkey::from_str("3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr")?,
+        metadata_update_auth: Pubkey::from_str("Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2")?,
     }
     .instruction(OpenPositionWithTokenExtensionsInstructionArgs {
         tick_lower_index: lower_initializable_tick_index,

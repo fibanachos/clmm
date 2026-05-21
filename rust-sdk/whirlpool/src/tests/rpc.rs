@@ -73,7 +73,7 @@ impl RpcContext {
 
         // Create the metadata_update_auth account required by OpenPositionWithTokenExtensions
         let metadata_update_auth =
-            Pubkey::try_from("3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr").unwrap();
+            Pubkey::try_from("Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2").unwrap();
         svm.set_account(
             metadata_update_auth,
             Account {

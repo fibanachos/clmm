@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc");
+declare_id!("CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs");
 
 mod entrypoint;
 
@@ -1047,7 +1047,7 @@ pub mod whirlpool {
     ///
     /// ### Parameters
     /// - `token_max_a` - The maximum amount of tokenA the user is willing to deposit.
-    /// - `token_max_b` - The maximum amount of tokenB the user is willing to deposit.        
+    /// - `token_max_b` - The maximum amount of tokenB the user is willing to deposit.
     /// - `min_sqrt_price` - The minimum sqrt price allowed.
     /// - `max_sqrt_price` - The maximum sqrt price allowed.
     ///

@@ -3,13 +3,12 @@
 Whirlpools is an open-source concentrated liquidity AMM contract on the Solana blockchain.
 This repository contains the Rust smart contract and SDKs to interact with a deployed program.
 
-The official deployment of the whirlpool contract can be found at the `whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc` address on:
-- [Solana Mainnet](https://solscan.io/account/whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc)
-- [Solana Devnet](https://solscan.io/account/whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc?cluster=devnet)
+The official deployment of the whirlpool contract can be found at the `CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs` address on:
+- [Cookie Chain](https://cookiescan.io/account/CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs)
 
 The contract is deployed using verifiable build, so that you can ensure that the hash of the on-chain program matches the hash of the program in this codebase.
 - [Solana Verify CLI](https://github.com/Ellipsis-Labs/solana-verifiable-build)
-- [Verification result on Osec API](https://verify.osec.io/status/whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc)
+- [Verification result on Osec API](https://verify.osec.io/status/CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs)
 
 The program has been audited several times by different security firms.
 * Jan 28th, 2022 - [Kudelski Security](/.audits/2022-01-28.pdf)

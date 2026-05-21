@@ -268,7 +268,7 @@ pub async fn setup_te_position(
     owner: Option<Pubkey>,
     whirlpool_deployment: WhirlpoolDeployment,
 ) -> Result<Pubkey, Box<dyn Error>> {
-    let metadata_update_auth = Pubkey::try_from("3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr")?;
+    let metadata_update_auth = Pubkey::try_from("Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2")?;
     let owner = owner.unwrap_or_else(|| ctx.signer.pubkey());
     let whirlpool_data = ctx.rpc.get_account(&whirlpool).await?;
     let whirlpool_account = Whirlpool::from_bytes(&whirlpool_data.data)?;

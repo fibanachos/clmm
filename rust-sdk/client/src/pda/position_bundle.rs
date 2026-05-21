@@ -4,7 +4,7 @@ use solana_pubkey::Pubkey;
 
 /// Derives the position bundle PDA for the given position mint under the supplied target program.
 ///
-/// Uses the mutable Whirlpool program ("whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc") when `None`.
+/// Uses the mutable Whirlpool program ("CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs") when `None`.
 pub fn get_position_bundle_address(
     position_mint: &Pubkey,
     program_id: Option<Pubkey>,
@@ -17,7 +17,7 @@ pub fn get_position_bundle_address(
 
 /// Derives the bundled position PDA for the given position bundle address and bundle index under the supplied target program.
 ///
-/// Uses the mutable Whirlpool program ("whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc") when `None`.
+/// Uses the mutable Whirlpool program ("CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs") when `None`.
 pub fn get_bundled_position_address(
     position_bundle_address: &Pubkey,
     bundle_index: u8,

@@ -185,7 +185,7 @@ impl OpenPositionWithMetadataInstructionArgs {
                 ///   9. `[optional]` rent (default to `SysvarRent111111111111111111111111111111111`)
                 ///   10. `[optional]` associated_token_program (default to `ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL`)
                 ///   11. `[optional]` metadata_program (default to `metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s`)
-                ///   12. `[optional]` metadata_update_auth (default to `3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr`)
+                ///   12. `[optional]` metadata_update_auth (default to `Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2`)
 #[derive(Clone, Debug, Default)]
 pub struct OpenPositionWithMetadataBuilder {
             funder: Option<solana_pubkey::Pubkey>,
@@ -278,7 +278,7 @@ impl OpenPositionWithMetadataBuilder {
                         self.metadata_program = Some(metadata_program);
                     self
     }
-            /// `[optional account, default to '3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr']`
+            /// `[optional account, default to 'Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2']`
 #[inline(always)]
     pub fn metadata_update_auth(&mut self, metadata_update_auth: solana_pubkey::Pubkey) -> &mut Self {
                         self.metadata_update_auth = Some(metadata_update_auth);
@@ -331,7 +331,7 @@ impl OpenPositionWithMetadataBuilder {
                                         rent: self.rent.unwrap_or(solana_pubkey::pubkey!("SysvarRent111111111111111111111111111111111")),
                                         associated_token_program: self.associated_token_program.unwrap_or(solana_pubkey::pubkey!("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL")),
                                         metadata_program: self.metadata_program.unwrap_or(solana_pubkey::pubkey!("metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s")),
-                                        metadata_update_auth: self.metadata_update_auth.unwrap_or(solana_pubkey::pubkey!("3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr")),
+                                        metadata_update_auth: self.metadata_update_auth.unwrap_or(solana_pubkey::pubkey!("Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2")),
                       };
           let args = OpenPositionWithMetadataInstructionArgs {
                                                               position_bump: self.position_bump.clone().expect("position_bump is not set"),

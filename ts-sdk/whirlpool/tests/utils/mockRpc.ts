@@ -24,7 +24,7 @@ import assert from "assert";
 import { randomUUID } from "crypto";
 import { FailedTransactionMetadata, FeatureSet, LiteSVM } from "litesvm";
 import { setDefaultFunder, WhirlpoolDeployment } from "../../src/config";
-import { LOCALNET_ADMIN_KEYPAIR_0, LOCALNET_ADMIN_KEYPAIR_1 } from "./admin";
+import { UPGRADE_AUTHORITY_SIGNER } from "./admin";
 import { getNextKeypair } from "./keypair";
 import { setupConfigAndFeeTiers } from "./program";
 import { getTokenSize } from "@solana-program/token-2022";
@@ -79,11 +79,7 @@ export async function getTestContext(): Promise<LiteSVM> {
     // Airdrop SOL to test accounts
     _testContext.airdrop(toPublicKey(signer.address), BigInt(100e9));
     _testContext.airdrop(
-      toPublicKey(LOCALNET_ADMIN_KEYPAIR_0.address),
-      BigInt(100e9),
-    );
-    _testContext.airdrop(
-      toPublicKey(LOCALNET_ADMIN_KEYPAIR_1.address),
+      toPublicKey(UPGRADE_AUTHORITY_SIGNER.address),
       BigInt(100e9),
     );
 

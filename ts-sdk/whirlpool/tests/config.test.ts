@@ -36,7 +36,7 @@ describe("Configuration", () => {
     );
     assert.strictEqual(
       WhirlpoolDeployment.mainnet.programId,
-      "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+      "CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs",
     );
     assert.strictEqual(
       WhirlpoolDeployment.mainnetImmutable.programId,

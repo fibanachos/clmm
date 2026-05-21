@@ -107,7 +107,7 @@ fn get_position_in_bundle_addresses(
 ///
 /// * `rpc` - A reference to the Solana RPC client.
 /// * `owner` - The public key of the wallet whose positions should be fetched.
-/// * `program_id` - An optional public key of the whirlpool program to target. Defaults to the mutable whirlpool program ("whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc")
+/// * `program_id` - An optional public key of the whirlpool program to target. Defaults to the mutable whirlpool program ("CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs")
 ///
 /// # Returns
 ///

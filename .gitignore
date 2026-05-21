@@ -29,3 +29,6 @@ wallet.json
 solana-release
 rust-sdk/integration/**/Cargo.lock
 ts-sdk/integration/**/Cargo.lock
+keys/cookie/
+keys/local/
+whirlpool.so

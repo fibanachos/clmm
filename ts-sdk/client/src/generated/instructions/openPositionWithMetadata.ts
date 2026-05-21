@@ -79,7 +79,7 @@ export type OpenPositionWithMetadataInstruction<
     | AccountMeta<string> = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
   TAccountMetadataUpdateAuth extends
     | string
-    | AccountMeta<string> = "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr",
+    | AccountMeta<string> = "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2",
   TRemainingAccounts extends readonly AccountMeta<string>[] = [],
 > = Instruction<TProgram> &
   InstructionWithData<ReadonlyUint8Array> &
@@ -359,7 +359,7 @@ export async function getOpenPositionWithMetadataInstructionAsync<
   }
   if (!accounts.metadataUpdateAuth.value) {
     accounts.metadataUpdateAuth.value =
-      "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr" as Address<"3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr">;
+      "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2" as Address<"Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2">;
   }
 
   const getAccountMeta = getAccountMetaFactory(programAddress, "programId");
@@ -549,7 +549,7 @@ export function getOpenPositionWithMetadataInstruction<
   }
   if (!accounts.metadataUpdateAuth.value) {
     accounts.metadataUpdateAuth.value =
-      "3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr" as Address<"3axbTs2z5GBy6usVbNVoqEgZMng3vZvMnAoX29BFfwhr">;
+      "Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2" as Address<"Ba59QdKR9fYJ362zFWLmscBF625qsMmFategLzRSRZv2">;
   }
 
   const getAccountMeta = getAccountMetaFactory(programAddress, "programId");

@@ -144,9 +144,10 @@ describe("open_position_with_token_extensions", () => {
     poolAddress: PublicKey,
     positionAddress: PublicKey,
   ) {
-    const WP_2022_METADATA_NAME_PREFIX = "OWP";
-    const WP_2022_METADATA_SYMBOL = "OWP";
-    const WP_2022_METADATA_URI_BASE = "https://metadata.orca.so/positions";
+    const WP_2022_METADATA_NAME_PREFIX = "Cookieora CLMM Position NFT";
+    const WP_2022_METADATA_SYMBOL = "CPN";
+    const WP_2022_METADATA_URI =
+      "https://www.cookieora.com/assets/json/clmm_position_nft.json";
 
     const mintAddress = positionMint.toBase58();
     const name =
@@ -156,7 +157,7 @@ describe("open_position_with_token_extensions", () => {
       "..." +
       mintAddress.slice(-4);
 
-    const uri = WP_2022_METADATA_URI_BASE + "/" + positionAddress.toBase58();
+    const uri = WP_2022_METADATA_URI;
 
     assert.ok(tokenMetadata.mint.equals(positionMint));
     assert.ok(tokenMetadata.name === name);

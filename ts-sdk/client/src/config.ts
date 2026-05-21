@@ -3,7 +3,7 @@ import { address } from "@solana/kit";
 
 /** The Whirlpools program's address for Solana Mainnet. */
 const WHIRLPOOLS_PROGRAM_ADDRESS: Address = address(
-  "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+  "CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs",
 );
 
 /** The Whirlpools program's config account address for Solana Mainnet. */

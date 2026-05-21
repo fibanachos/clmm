@@ -9,5 +9,5 @@ use solana_pubkey::{pubkey, Pubkey};
 
 
   /// `whirlpool` program ID.
-  pub const WHIRLPOOL_ID: Pubkey = pubkey!("whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc");
+  pub const WHIRLPOOL_ID: Pubkey = pubkey!("CLMMmWqTtyNSomqXP3kETJy2SGKPdr31USsm4GfbLyKs");
 
