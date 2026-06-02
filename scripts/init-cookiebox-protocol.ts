@@ -148,7 +148,7 @@ async function main() {
     console.log(`Fee tier created: ${feeTier.toBase58()}`);
   }
 
-  console.log("\n=== Cookieora Whirlpool deployment ===");
+  console.log("\n=== CookieBox Whirlpool deployment ===");
   console.log(`programId:      ${PROGRAM_ID.toBase58()}`);
   console.log(`configAddress:  ${configKeypair.publicKey.toBase58()}`);
   console.log(`feeAuthority:   ${FEE_AUTHORITY.toBase58()}`);

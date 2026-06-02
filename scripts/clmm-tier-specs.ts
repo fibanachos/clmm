@@ -1,5 +1,5 @@
 /**
- * Cookieora CLMM fee tier specs — shared with cookieora/scripts/createClmmFeeTiers.ts
+ * CookieBox CLMM fee tier specs — shared with cookiebox/scripts/createClmmFeeTiers.ts
  */
 export const CLMM_STATIC_FEE_TIER_SPECS = [
   { label: "0.1%", tickSpacing: 8, defaultFeeRate: 1000 },
@@ -10,7 +10,7 @@ export const CLMM_STATIC_FEE_TIER_SPECS = [
   { label: "4%", tickSpacing: 96, defaultFeeRate: 40000 },
 ] as const;
 
-/** Legacy splash tier — kept for backward compatibility, not in Cookieora UI allowlist. */
+/** Legacy splash tier — kept for backward compatibility, not in CookieBox UI allowlist. */
 export const CLMM_SPLASH_FEE_TIER = {
   tickSpacing: 32896,
   defaultFeeRate: 1000,

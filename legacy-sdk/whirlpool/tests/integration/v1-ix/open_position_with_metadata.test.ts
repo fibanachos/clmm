@@ -177,7 +177,7 @@ describe("open_position_with_metadata", () => {
 
     assert.ok(
       metadata.uri.replace(/\0/g, "") ===
-        "https://www.cookieora.com/assets/json/clmm_position_nft.json",
+        "https://www.cookiebox.app/assets/json/clmm_position_nft.json",
     );
   }
 

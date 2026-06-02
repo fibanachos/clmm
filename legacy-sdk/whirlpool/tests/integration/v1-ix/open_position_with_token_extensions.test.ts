@@ -144,10 +144,10 @@ describe("open_position_with_token_extensions", () => {
     poolAddress: PublicKey,
     positionAddress: PublicKey,
   ) {
-    const WP_2022_METADATA_NAME_PREFIX = "Cookieora CLMM Position NFT";
+    const WP_2022_METADATA_NAME_PREFIX = "CookieBox CLMM Position NFT";
     const WP_2022_METADATA_SYMBOL = "CPN";
     const WP_2022_METADATA_URI =
-      "https://www.cookieora.com/assets/json/clmm_position_nft.json";
+      "https://www.cookiebox.app/assets/json/clmm_position_nft.json";
 
     const mintAddress = positionMint.toBase58();
     const name =

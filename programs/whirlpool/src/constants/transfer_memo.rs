@@ -1,5 +1,5 @@
-pub const TRANSFER_MEMO_COLLECT_PROTOCOL_FEES: &str = "Cookieora CollectProtocolFees";
-pub const TRANSFER_MEMO_COLLECT_FEES: &str = "Cookieora CollectFees";
-pub const TRANSFER_MEMO_COLLECT_REWARD: &str = "Cookieora CollectReward";
-pub const TRANSFER_MEMO_DECREASE_LIQUIDITY: &str = "Cookieora Withdraw";
-pub const TRANSFER_MEMO_SWAP: &str = "Cookieora Trade";
+pub const TRANSFER_MEMO_COLLECT_PROTOCOL_FEES: &str = "CookieBox CollectProtocolFees";
+pub const TRANSFER_MEMO_COLLECT_FEES: &str = "CookieBox CollectFees";
+pub const TRANSFER_MEMO_COLLECT_REWARD: &str = "CookieBox CollectReward";
+pub const TRANSFER_MEMO_DECREASE_LIQUIDITY: &str = "CookieBox Withdraw";
+pub const TRANSFER_MEMO_SWAP: &str = "CookieBox Trade";

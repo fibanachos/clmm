@@ -6,18 +6,18 @@ pub mod whirlpool_nft_update_auth {
 }
 
 pub const POSITION_NFT_METADATA_URI: &str =
-    "https://www.cookieora.com/assets/json/clmm_position_nft.json";
+    "https://www.cookiebox.app/assets/json/clmm_position_nft.json";
 
 // Based on Metaplex TokenMetadata
 //
 // METADATA_NAME   : max  32 bytes
 // METADATA_SYMBOL : max  10 bytes
 // METADATA_URI    : max 200 bytes
-pub const WP_METADATA_NAME: &str = "Cookieora CLMM Position NFT";
+pub const WP_METADATA_NAME: &str = "CookieBox CLMM Position NFT";
 pub const WP_METADATA_SYMBOL: &str = "CPN";
 pub const WP_METADATA_URI: &str = POSITION_NFT_METADATA_URI;
 
-pub const WPB_METADATA_NAME_PREFIX: &str = "Cookieora Position Bundle";
+pub const WPB_METADATA_NAME_PREFIX: &str = "CookieBox Position Bundle";
 pub const WPB_METADATA_SYMBOL: &str = "CPB";
 pub const WPB_METADATA_URI: &str = POSITION_NFT_METADATA_URI;
 
@@ -28,6 +28,6 @@ pub const WPB_METADATA_URI: &str = POSITION_NFT_METADATA_URI;
 //
 // see also: TokenMetadata struct
 // https://github.com/solana-labs/solana-program-library/blob/cd6ce4b7709d2420bca60b4656bbd3d15d2e1485/token-metadata/interface/src/state.rs#L25
-pub const WP_2022_METADATA_NAME_PREFIX: &str = "Cookieora CLMM Position NFT";
+pub const WP_2022_METADATA_NAME_PREFIX: &str = "CookieBox CLMM Position NFT";
 pub const WP_2022_METADATA_SYMBOL: &str = "CPN";
 pub const WP_2022_METADATA_URI: &str = POSITION_NFT_METADATA_URI;

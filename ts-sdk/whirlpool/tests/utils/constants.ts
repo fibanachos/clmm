@@ -10,10 +10,10 @@ export const TREASURY = address(
 
 export const METADATA_UPDATE_AUTHORITY: Address = TREASURY;
 
-export const POSITION_NFT_NAME = "Cookieora CLMM Position NFT";
+export const POSITION_NFT_NAME = "CookieBox CLMM Position NFT";
 export const POSITION_NFT_SYMBOL = "CPN";
 
 export const POSITION_NFT_METADATA_URI =
-  "https://www.cookieora.com/assets/json/clmm_position_nft.json";
+  "https://www.cookiebox.app/assets/json/clmm_position_nft.json";
 
 export const POSITION_NFT_URI = POSITION_NFT_METADATA_URI;
